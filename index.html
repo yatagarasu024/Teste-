@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Roxo com Botão</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Bem-vindo ao Site Roxo!</h1>
+        <button onclick="irParaSegundaInterface()">Clique aqui</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+function irParaSegundaInterface() {
+    window.location.href = "segunda-interface.html";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segunda Interface</title>
+    <link rel="stylesheet" href="segunda-styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Segunda Interface</h1>
+        <p>Aqui está a nova interface roxa e azul estrelada.</p>
+    </div>
+</body>
+</html>
+body {
+    background-color: purple;
+    color: white;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    color: blue;
+}
+
+p {
+    font-size: 18px;
+    margin-top: 20px;
+}
